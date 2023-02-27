@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 0;
+    color: #232323;
+    text-align: center;
+    background-color: rgb(219, 215, 234);
+}
+
+main {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field01 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+input {
+    outline: 0;
+    border: 1.5px solid rgb(136, 119, 196);
+    box-shadow: rgba(108, 89, 179, 0.568) 3px 3px 1px;
+    padding: 0.4em;
+    width: 40%;
+    height: 30px;
+}
+
+#button {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2px;
+    width: 10%;
+    height: 30px;
+    border: 1.5px solid rgb(136, 119, 196);
+    border-left: 0;
+    box-shadow: rgba(108, 89, 179, 0.568) 3px 3px 1px;
+    transition: 0.2s;
+}
+
+#button:hover {
+    background-color: rgb(224, 219, 239);
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(223, 217, 250);
+    font-size: 18px;
+    transition: 0.2s;
+    list-style-type: none;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: rgb(188, 182, 213);
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: rgb(126, 109, 189);
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
